@@ -5,4 +5,4 @@ def element_at(my_list, idx):
     count = len(my_list)
     if idx > count:
         return
-    return (my_list[idx], count)
+    return (ord(my_list[idx]), ord(count))
