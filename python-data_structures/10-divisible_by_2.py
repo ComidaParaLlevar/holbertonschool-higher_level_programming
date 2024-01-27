@@ -3,7 +3,7 @@ def divisible_by_2(my_list=[]):
     a_list = []
     for i in my_list:
         if i % 2 == 0:
-            a_list += True
+            a_list[i] = True
         else:
-            a_list += False
-
+            a_list[i] = False
+    return (a_list)
