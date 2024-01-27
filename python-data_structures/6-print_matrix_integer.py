@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for i in matrix:
-        c = 1
-        l = len(i)
+        counter = 1
+        lenght = len(i)
         for j in i:
-            if c == l:
+            if counter == lenght:
                 print("{:d}".format(j), end='')
             else:
                 print("{:d}".format(j), end=' ')
-            c += 1
+            counter += 1
         print()
