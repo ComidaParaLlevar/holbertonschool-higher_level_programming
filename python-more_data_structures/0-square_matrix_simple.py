@@ -2,7 +2,13 @@
 def square_matrix_simple(matrix=[]):
     new_matrix = []
     for i in matrix:
-        if matrix:
-            new_matrix.append(list(map(lambda x: x**2, i)))
+        new_row = []
+        for j in i:
+            if matrix:
+                new_row.append(j ** 2)
+        new_matrix.append(new_row)
 
     return new_matrix
+
+new = square_matrix_simple([[1, 2, 3], [4, 5, 6]])
+print(new)
