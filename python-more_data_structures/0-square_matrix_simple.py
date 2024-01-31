@@ -9,6 +9,3 @@ def square_matrix_simple(matrix=[]):
         new_matrix.append(new_row)
 
     return new_matrix
-
-new = square_matrix_simple([[1, 2, 3], [4, 5, 6]])
-print(new)
