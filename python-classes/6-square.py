@@ -8,6 +8,7 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """initialize method for storing attribute"""
         self.__size = size
+        self.__position = position
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
