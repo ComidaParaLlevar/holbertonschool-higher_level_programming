@@ -21,6 +21,11 @@ Float and negative integer:
     >>> add_integer(100.3, -10)
     90
 
+>>> add_integer(0, float('nan'))
+    Traceback (most recent call last):
+    	      ...
+    ValueError: cannot convert float NaN to integer
+
 Float overflow:
     >>> add_integer(1000.5)
     1098
