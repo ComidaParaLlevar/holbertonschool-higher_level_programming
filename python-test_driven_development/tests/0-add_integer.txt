@@ -3,7 +3,7 @@ Using repr(add_integer)
 
 First import repr(add_integer) from the repr(add_integer) module:
 
->>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
 
 Usage:
     >>> add_integer(1, 2)
