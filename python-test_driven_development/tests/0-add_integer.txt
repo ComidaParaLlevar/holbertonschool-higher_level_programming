@@ -21,7 +21,7 @@ Float and negative integer:
     >>> add_integer(100.3, -10)
     90
 
-Big float:
+Float overflow:
     >>> add_integer(1000.5)
     1098
 
