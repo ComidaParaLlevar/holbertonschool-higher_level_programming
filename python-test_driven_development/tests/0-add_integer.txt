@@ -1,9 +1,9 @@
-Using ``add_integer``
+Using repr(add_integer)
 ---------------------
 
-First import ``add_integer`` from the ``add_integer`` module:
+First import repr(add_integer) from the repr(add_integer) module:
 
-	>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 Usage:
     >>> add_integer(1, 2)
@@ -35,7 +35,7 @@ String a:
     >>> add_integer("School", 4)
     Traceback (most recent call last):
     ...
-    TypeError: b must be an integer
+    TypeError: a must be an integer
 
 None input:
     >>> add_integer(None)
