@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" script lng """
+
 
 class Base():
     """This class will be the “base” of all other classes in this project.
@@ -10,6 +12,7 @@ class Base():
 
     def __init__(self, id=None):
         """Class constructor
+
         Args: id(int)"""
 
         if id is not None:
