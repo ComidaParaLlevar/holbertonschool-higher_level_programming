@@ -95,3 +95,10 @@ if __name__ != "__main__":
         def area(self):
             """ returns area of rectangle"""
             return self.__height * self.__width
+
+        def display(self):
+            """ prints rectangle in # """
+            for i in range(self.__height):
+                for j in range(self.width):
+                    print('#', end='')
+                print()
