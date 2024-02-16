@@ -17,8 +17,8 @@ class Rectangle(Base):
             - __y: position
             - id: id"""
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
