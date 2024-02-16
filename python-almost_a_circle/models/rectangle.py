@@ -3,8 +3,6 @@
 from .base import Base
 
 if __name__ != "__main__":
-
-
     class Rectangle(Base):
         """ Rectangle representation. inherits from base"""
 
