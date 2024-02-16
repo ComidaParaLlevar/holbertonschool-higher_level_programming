@@ -98,8 +98,13 @@ if __name__ != "__main__":
 
         def display(self):
             """ prints rectangle in # """
+            g = False,
             for i in range(self.__height):
+                if g is False:
+                    print("" * self.__y)
+                    g = True
                 for j in range(self.width):
+                    print(" " * self.__x)
                     print('#', end='')
                 print()
 
