@@ -102,3 +102,7 @@ if __name__ != "__main__":
                 for j in range(self.width):
                     print('#', end='')
                 print()
+
+        def __str__(self):
+            return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}" +\
+                f" - {self.__width}/{self.__height}"
