@@ -97,16 +97,11 @@ if __name__ != "__main__":
             return self.__height * self.__width
 
         def display(self):
-            """ prints rectangle in # """
-            g = False,
+            """Prints the rectangle using #"""
+            print("\n" * self.__y, end="")
             for i in range(self.__height):
-                if g is False:
-                    print("" * self.__y)
-                    g = True
-                for j in range(self.width):
-                    print(" " * self.__x)
-                    print('#', end='')
-                print()
+                print(" " * self.__x, end="")
+                print("#" * self.__width)
 
         def __str__(self):
             return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}" +\
