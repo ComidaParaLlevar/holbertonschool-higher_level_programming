@@ -106,3 +106,14 @@ if __name__ != "__main__":
         def __str__(self):
             return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}" +\
                 f" - {self.__width}/{self.__height}"
+
+        def update(self, *args, **kwargs):
+            """ assigns an argument to each attribute """
+            attr = ["id", "width", "height", "x", "y"]
+            if len(args) > 0:
+                for i, j in enumerate(args):
+                    if i < len(attr):
+                        self.__setattr__(attr[i], j)
+                else:
+                    for c, k in kwargs.items():
+                        self.__setattr__(c, k)
