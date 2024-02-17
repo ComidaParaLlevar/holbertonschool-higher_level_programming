@@ -114,6 +114,6 @@ if __name__ != "__main__":
                 for i, j in enumerate(args):
                     if i < len(attr):
                         self.__setattr__(attr[i], j)
-                else:
-                    for c, k in kwargs.items():
-                        self.__setattr__(c, k)
+                    else:
+                        for c, k in kwargs.items():
+                            self.__setattr__(c, k)
