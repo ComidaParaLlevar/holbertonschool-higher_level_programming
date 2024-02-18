@@ -44,7 +44,7 @@ class Base():
                         [obj.to_dictionary() for obj in list_objs])
                 file.write(json_string)
 
-    def from_json_string(self, json_string):
+    def from_json_string(json_string):
         """returns the list of the JSON string representation"""
         if json_string is None or json_string == "":
             return []
